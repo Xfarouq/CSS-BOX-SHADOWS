@@ -1,0 +1,25 @@
+body{
+    background: rgb(243, 215, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ /*horizontal, vertical, blur-radius, spreading-blur, color*/
+
+
+.box{
+    background: white;
+    padding: 2em;
+    width: 300px;
+    margin-top: 80px;
+    color: red;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    transition: 380ms;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.25);
+}
