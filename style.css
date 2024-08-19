@@ -8,18 +8,25 @@ body{
 
  /*horizontal, vertical, blur-radius, spreading-blur, color*/
 
-
 .box{
+    display: flex;
     background: white;
-    padding: 2em;
-    width: 300px;
-    margin-top: 80px;
-    color: red;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-    transition: 380ms;
+    padding: 2.5em;
+    position: relative;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 0 16px red,
+                0 0 0 32px pink,
+                0 0 0 48px green;
 }
 
-.box:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 70px rgba(0, 0, 0, 0.25);
+.click{
+    border: 3px solid black;
+    border-radius: 50px;
+    background: white;
+    padding: 9px 35px;
+    font-size: 15px;
+    cursor: pointer;
 }
